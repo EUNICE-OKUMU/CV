@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunice Okumu's CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>Curriculum Vitae</h1>
+            <p>| <a href=" https://www.linkedin.com/in/eunice-okumu-30513b33a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3BNtqFg7EySSGzee37co4Hzg%3D%3D">Eunice</a></p>
+        </header>
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> Eunice Okumu</p>
+            <p><strong>Phone No:</strong> 0714709439</p>
+            <p><strong>Email:</strong> okumueunice180@gmail.com</p>
+            <p><strong>Nationality:</strong> Kenyan</p>
+            <p><strong>Citizenship:</strong> Kenyan</p>
+            <p><strong>Date of Birth:</strong> May 9, 2001</p>
+        </section>
+        <section>
+            <h2>Objective</h2>
+            <p>To join a dynamic team as an IT support specialist where I can leverage my technical 
+                expertise and customer service skills to provide efficient and effective support,
+                ensuring the smooth operation of IT systems and enhancing user satisfaction.</p>
+            <p>To obtain an entry-level IT position at a reputable organization where I can utilize 
+                my technical skills, problem-solving abilities, and passion for technology to contribute
+                to the success of the team while gaining hands-on experience and professional growth.</p>
+        </section>
+        <section>
+            <h2>Personal Statement</h2>
+            <p>Expecting to graduate with a degree in Information Technology, seeking to leverage my programming skills and passion for technology to contribute in innovative projects. Eager to join a dynamic team where I can grow and make a significant impact.</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p><strong>University level:</strong> Zetech University, Kenya</p>
+            <p>Bachelor of Science in Information Technology, 2022-2025</p>
+            <ul>
+                <li>Relevant coursework: DBMS, Programming with Python,
+                     Internet Programming I & II, computer graphics, etc</li>
+            </ul>
+            <p><strong>Secondary level:</strong> Bishop Okoth Girls' Mbaga  2018-2021 </p>
+            <p><strong>Primary level:</strong> Got Matar Primary   2017</p>
+          
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Technical Skills: PHP, Python, HTML/CSS, JavaScript, SQL, 
+                    •	Database management
+                    •	Network administration
+                    •	Web development
+                    
+
+                </li>
+                <li>Soft Skills: Problem-solving, Teamwork, Communication</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Personal Portfolio Website</strong></li>
+                <p>Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+                <li><strong>School Management System</strong></li>
+                <p>Created a School Management System using PHP, HTML, CSS, and SQL, improving the efficiency of enrolling students online.</p>
+            </ul>
+        </section>
+       
+    
+        </section>
+        <section>
+            <h2>Hobbies and Interests</h2>
+            <ul>
+                <li>Programming: Enjoy creating small applications and learning new programming languages.</li>
+                <li>Hiking: Passionate about exploring nature trails and staying active.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>References</h2>
+            <p>Available upon request</p>
+        </section>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section');
+    
+    sections.forEach(section => {
+        const h2 = section.querySelector('h2');
+        h2.style.cursor = 'pointer';
+        h2.addEventListener('click', () => {
+            const content = section.querySelectorAll('p, ul');
+            content.forEach(element => element.classList.toggle('hidden'));
+        });
+    });
+});
+
+
+</script>
+</html>
